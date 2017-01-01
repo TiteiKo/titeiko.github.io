@@ -227,7 +227,7 @@ dpkg-deb --build the_folder our-project_2016.12.30-1404_431fc2e.deb
 
 ### Pros
 
-- Installing and updating on a server becomes as easy as running a `apt-install our-project`
+- Installing and updating on a server becomes as easy as running a `apt-get install our-project`
 - Ruby and all the other dependencies are installed alongside the project.
 - Deploying or updating a server doesn't require to have ruby, git or anything installed except ssh.
 - You can go crazy and make a core package containing the source code, a package containing the web service and one containing a workers service.
