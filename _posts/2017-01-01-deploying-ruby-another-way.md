@@ -2,7 +2,7 @@
 layout: post
 title: Deploying Ruby Another Way
 image: /images/deploying-ruby-another-way.jpg
-date: 2017-01-01T19:56:00.000Z
+date: 2017-01-01T00:00:00.000Z
 ---
 
 Most of the people I know that work with Ruby deploy in two different ways: capistrano or heroku. It's easy and fast to setup, and it does the job.
