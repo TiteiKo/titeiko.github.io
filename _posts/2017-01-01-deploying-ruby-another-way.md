@@ -210,7 +210,7 @@ bundle install --deployment --without development test --local
 
 # Reload the service
 systemctl daemon-reload
-service bookandgolf-hanami reload
+service our-project-web reload
 ```
 
 --------------------------------------------------------------------------------
