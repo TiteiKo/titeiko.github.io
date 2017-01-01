@@ -1,0 +1,124 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #e09d21;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($brand-color, 15%);
+
+// Width of the content area
+$content-width:    1200px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Minima also includes a mixin for defining media queries.
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// Import partials from the `minima` theme.
+@import "minima";
+
+.highlighter-rouge .highlight, code, pre {
+  background: #f1f1f1;
+}
+
+.highlighter-rouge, pre, code {
+  border-color: #dedede;
+  font-family: monospace;
+}
+
+.site-title, .site-title:visited {
+  color: $brand-color;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.site-footer {
+  text-align: center;
+}
+
+hr {
+  height: 4px;
+  background: $brand-color;
+  border: none;
+  margin: 60px 0px 40px 0px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+
+.post-content {
+  h2 {
+    margin-top: 20px;
+    font-size: 1.7em;
+  }
+
+  h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+}
+
+.post-image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 62px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  box-shadow: 0 0 12px #000;
+
+  .post-title {
+    color: #FFF;
+    text-shadow: 1px 1px 5px #000;
+    margin-top: 250px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  .post-meta {
+    color: #EEE;
+    text-shadow: 1px 1px 3px #000;
+  }
+
+
+}
+.post-header {
+  height: 500px;
+}
+
+.site-header {
+  background: white;
+  z-index: 1;
+  box-shadow: 0 3px 10px fade-out(black, 0.7);
+  border-top-color: $brand-color;
+}
+
+footer {
+  margin-top: 150px;
+}
