@@ -54,7 +54,7 @@ The first obstacle when building a package is to choose a versioning system. I l
 
 `year.month.day-hourminute_hash`
 
-This gives versions like the following: `2016.12.30-1404_431fc2e`
+This gives versions like the following: `2016.12.30-1404-431fc2e`
 
 The moment is the one of the build. So you know it has been built on the 30th of december 2016, at 2pm (and 4 minutes). If you need to see what it looked like back then, just checkout the commit to see.
 
@@ -222,7 +222,7 @@ service our-project-web reload
 There you go, you have your folder, ready to be packaged to a nice `.deb`!
 
 ```
-dpkg-deb --build the_folder our-project_2016.12.30-1404_431fc2e.deb
+dpkg-deb --build the_folder our-project_2016.12.30-1404-431fc2e.deb
 ```
 
 ### Pros
